@@ -34,24 +34,24 @@ Ce projet peut aider tout type d'entrepreneur pour sa simplicité et fiabilité.
 		"title":"string",
 		"description":"string",
 		"created_at":"timestamp",
-    "finished_at":"timestamp",
-    "status":"string",
+		"finished_at":"timestamp",
+		"status":"string:TODO|PROGRESS|DONE",
 		"author":"profile"
 	],
 	"milestone":[
 		"objective":"string",
 		"open_at":"timestamp",
-    "close_at":"timestamp",
-    "status":"string",
-    "project":"project"
+		"close_at":"timestamp",
+		"status":"string:TODO|PROGRESS|DONE",
+		"project":"project"
 	],
 	"Task":[
 		"title":"string",
 		"description":"string",
 		"priority":"boolean",
-    "urgency":"boolean",
-    "start_at":"timestamp",
-    "end_at":"timestamp",
+		"urgency":"boolean",
+		"start_at":"timestamp",
+		"end_at":"timestamp",
 		"status":"string"
 	]
 }
