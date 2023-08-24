@@ -17,35 +17,35 @@ Ce projet peut aider tout type d'entrepreneur pour sa simplicité et fiabilité.
 
 ```json
 {
-	"utilisateur":[
+	"utilisateur":{
 		"username":"string",
 		"password":"string|crypto",
-		"role":"string:candidat|employeur"
-	],
-	"profile":[
+		"role":["candidat","employeur"]
+	},
+	"profile":{
 		"name":"string",
 		"legacy":"string",
 		"email":"string",
 		"phone":"string",
 		"address":"string",
 		"owner":"utilisateur"
-	],
-	"project":[
+	},
+	"project":{
 		"title":"string",
 		"description":"string",
 		"created_at":"timestamp",
 		"finished_at":"timestamp",
-		"status":"string:TODO|PROGRESS|DONE",
+		"status":["TODO","PROGRESS","DONE"],
 		"author":"profile"
-	],
-	"milestone":[
+	},
+	"milestone":{
 		"objective":"string",
 		"open_at":"timestamp",
 		"close_at":"timestamp",
-		"status":"string:TODO|PROGRESS|DONE",
+		"status":["TODO","PROGRESS","DONE"],
 		"project":"project"
-	],
-	"Task":[
+	},
+	"Task":{
 		"title":"string",
 		"description":"string",
 		"priority":"boolean",
@@ -53,6 +53,6 @@ Ce projet peut aider tout type d'entrepreneur pour sa simplicité et fiabilité.
 		"start_at":"timestamp",
 		"end_at":"timestamp",
 		"status":"string"
-	]
+	}
 }
 ```
