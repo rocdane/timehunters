@@ -1,5 +1,5 @@
 # timehunters
-Time Hunters [info](https://github.com/rocdane/timehunters)
+Time Hunters (Solution logicielle sur mesure de gestion du temps) [info](https://github.com/rocdane/timehunters)
 
 ## Description
 Time Hunters est un projet qui a pour objectif l'implémentation d'un modèle de gestion de temps. Une prolongation de ce projet est la gestion de projet basé sur la méthode agile. Ce projet n'a pas pour objectif de répondre à tous les besoins en rapport avec la gestion des projets. Néanmoins, le projet permet une gestion optimal du temps basé sur la matrice de Eisenhower.
