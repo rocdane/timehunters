@@ -5,22 +5,22 @@ Time Hunters [info](https://github.com/rocdane/timehunters)
 Time Hunters est un projet qui a pour objectif l'implémentation d'un modèle de gestion de temps. Une prolongation de ce projet est la gestion de projet basé sur la méthode agile. Ce projet n'a pas pour objectif de répondre à tous les besoins en rapport avec la gestion des projets. Néanmoins, le projet permet une gestion optimal du temps basé sur la matrice de Eisenhower.
 
 ## Public
-Ce projet peut aider tout type d'entrepreneur pour sa simplicité et fiabilité.
+Ce projet peut aider tout type d'entrepreneur dans le besoin de gérer son temps avec simplicité et fiabilité.
 
 ## Fonctionnalités
-1. En tant que Utilisateur je crée un nouveau projet
-2. En tant que Utilisateur, j'ajoute des objectifs à mon projet
-3. En tant que Utilisateur, j'ajoute une tâche à mon objectif
-4. En tant que Utilisateur, je planifie une tâche
+1. En tant que Utilisateur je crée un compte utilisateur
+2. En tant que Utilisateur je crée un nouveau projet
+3. En tant que Utilisateur, j'ajoute des objectifs à mon projet
+4. En tant que Utilisateur, j'ajoute une tâche à mon objectif
+5. En tant que Utilisateur, je planifie une tâche
 
 ## Concepts
 
 ```json
 {
-	"utilisateur":{
+	"user":{
 		"username":"string",
-		"password":"string|crypto",
-		"role":["candidat","employeur"]
+		"password":"string|crypto"
 	},
 	"profile":{
 		"name":"string",
@@ -28,7 +28,7 @@ Ce projet peut aider tout type d'entrepreneur pour sa simplicité et fiabilité.
 		"email":"string",
 		"phone":"string",
 		"address":"string",
-		"owner":"utilisateur"
+		"owner":"user"
 	},
 	"project":{
 		"title":"string",
@@ -52,7 +52,7 @@ Ce projet peut aider tout type d'entrepreneur pour sa simplicité et fiabilité.
 		"urgency":"boolean",
 		"start_at":"timestamp",
 		"end_at":"timestamp",
-		"status":"string"
+		"status":["TODO","PROGRESS","DONE"]
 	}
 }
 ```
