@@ -33,8 +33,7 @@ Ce projet peut aider tout type d'entrepreneur dans le besoin de gérer son temps
 	"project":{
 		"title":"string",
 		"description":"string",
-		"created_at":"timestamp",
-		"finished_at":"timestamp",
+		"deadline":"timestamp",
 		"status":["TODO","PROGRESS","DONE"],
 		"author":"profile"
 	},
