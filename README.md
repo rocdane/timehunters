@@ -40,18 +40,18 @@ Ce projet peut aider tout type d'entrepreneur dans le besoin de gérer son temps
 	},
 	"milestone":{
 		"objective":"string",
-		"open_at":"timestamp",
-		"close_at":"timestamp",
+		"opened_at":"timestamp",
+		"closed_at":"timestamp",
 		"status":["TODO","PROGRESS","DONE"],
 		"project":"project"
 	},
 	"Task":{
 		"title":"string",
 		"description":"string",
-		"priority":"boolean",
-		"urgency":"boolean",
-		"start_at":"timestamp",
-		"end_at":"timestamp",
+		"important":"boolean",
+		"urgent":"boolean",
+		"started_at":"timestamp",
+		"ended_at":"timestamp",
 		"status":["TODO","PROGRESS","DONE"]
 	}
 }
