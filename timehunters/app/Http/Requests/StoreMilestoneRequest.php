@@ -22,7 +22,8 @@ class StoreMilestoneRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'objective' => 'required',
+            'project' => 'required',
         ];
     }
 }

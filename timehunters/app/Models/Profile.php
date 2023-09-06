@@ -19,7 +19,8 @@ class Profile extends Model
         'legacy',
         'email',
         'phone',
-        'address'
+        'address',
+        'user_id',
     ];
 
     public function projects(): HasMany
@@ -29,6 +30,6 @@ class Profile extends Model
 
     public function user(): BelongsTo
     {
-        return $this->belongsTo(User::class, 'foreign_key');
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

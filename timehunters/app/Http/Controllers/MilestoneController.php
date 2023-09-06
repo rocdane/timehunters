@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMilestoneRequest;
 use App\Http\Requests\UpdateMilestoneRequest;
 use App\Models\Milestone;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
+use Carbon\Carbon;
 
 class MilestoneController extends Controller
 {
@@ -19,9 +22,9 @@ class MilestoneController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(): View
     {
-        //
+        return view('milestone');
     }
 
     /**
@@ -29,7 +32,11 @@ class MilestoneController extends Controller
      */
     public function store(StoreMilestoneRequest $request)
     {
-        //
+        $insert = Milestone::create([
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
+            'deadline' => Carbon::createFromFormat('d/m/Y', $request->input('deadline'))->format('Y-m-d h:i:s')
+        ]);
     }
 
     /**

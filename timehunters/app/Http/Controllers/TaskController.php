@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
 use App\Models\Task;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
+use Carbon\Carbon;
 
 class TaskController extends Controller
 {
@@ -21,7 +24,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        return view('task');
     }
 
     /**

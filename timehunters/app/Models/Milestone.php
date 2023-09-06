@@ -16,7 +16,9 @@ class Milestone extends Model
      */
     protected $fillable = [
         'objective',
-        'status',
+        'opened_at',
+        'closed_at',
+        'project_id',
     ];
 
     /**
@@ -36,6 +38,6 @@ class Milestone extends Model
 
     public function project(): BelongsTo
     {
-        return $this->belongsTo(Project::class, 'foreign_key');
+        return $this->belongsTo(Project::class, 'project_id');
     }
 }

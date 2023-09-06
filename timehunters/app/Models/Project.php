@@ -17,7 +17,9 @@ class Project extends Model
     protected $fillable = [
         'title',
         'description',
+        'deadline',
         'status',
+        'profile_id',
     ];
 
     
@@ -37,6 +39,6 @@ class Project extends Model
 
     public function profile(): BelongsTo
     {
-        return $this->belongsTo(Profile::class, 'foreign_key');
+        return $this->belongsTo(Profile::class, 'profile_id');
     }
 }

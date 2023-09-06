@@ -19,6 +19,10 @@ return new class extends Migration
             $table->boolean('urgent');
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
+            $table->unsignedBigInteger('project_id')->nullable();
+            $table->unsignedBigInteger('milestone_id')->nullable();
+            $table->foreign('project_id')->references('id')->on('projects');
+            $table->foreign('milestone_id')->references('id')->on('milestones');
             $table->timestamps();
         });
     }

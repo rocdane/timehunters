@@ -19,7 +19,9 @@ class Task extends Model
         'description',
         'important',
         'urgent',
-        'status'
+        'status',
+        'project_id',
+        'milestone_id',
     ];
 
     /**
@@ -32,8 +34,14 @@ class Task extends Model
         'ended_at' => 'datetime',
     ];
 
+    public function project(): BelongsTo
+    {
+        return $this->belongsTo(Project::class, 'project_id');
+    }
+
+
     public function milestone(): BelongsTo
     {
-        return $this->belongsTo(Milestone::class, 'foreign_key');
+        return $this->belongsTo(Milestone::class, 'milestone_id');
     }
 }
