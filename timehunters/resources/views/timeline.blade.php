@@ -19,7 +19,7 @@
                 <li role="presentation" class="flex-grow basis-0 text-center">
                     <a
                         href="#tabs-todo"
-                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-success data-[te-nav-active]:text-success dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-success-400 dark:data-[te-nav-active]:text-success-400"
                         data-te-toggle="pill"
                         data-te-target="#tabs-todo"
                         data-te-nav-active
@@ -32,7 +32,7 @@
                 <li role="presentation" class="flex-grow basis-0 text-center">
                     <a
                         href="#tabs-toassign"
-                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-warning data-[te-nav-active]:text-warning dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-warning-400 dark:data-[te-nav-active]:text-warning-400"
                         data-te-toggle="pill"
                         data-te-target="#tabs-toassign"
                         role="tab"
@@ -44,7 +44,7 @@
                 <li role="presentation" class="flex-grow basis-0 text-center">
                     <a
                         href="#tabs-toschedule"
-                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-info data-[te-nav-active]:text-info dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-info-400 dark:data-[te-nav-active]:text-info-400"
                         data-te-toggle="pill"
                         data-te-target="#tabs-toschedule"
                         role="tab"
@@ -56,7 +56,7 @@
                 <li role="presentation" class="flex-grow basis-0 text-center">
                     <a
                         href="#tabs-todrop"
-                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-danger data-[te-nav-active]:text-danger dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-danger-400 dark:data-[te-nav-active]:text-danger-400"
                         data-te-toggle="pill"
                         data-te-target="#tabs-todrop"
                         role="tab"

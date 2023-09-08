@@ -2,6 +2,5 @@
 
 @section('content')
     <x-branding.header />
-
-    <x-form.milestone />
+    <x-form.milestone :projects="$projects"/>    
 @endsection

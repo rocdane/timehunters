@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMilestoneRequest;
 use App\Http\Requests\UpdateMilestoneRequest;
 use App\Models\Milestone;
+use App\Models\Project;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 use Carbon\Carbon;
@@ -24,7 +25,9 @@ class MilestoneController extends Controller
      */
     public function create(): View
     {
-        return view('milestone');
+        $projects = Project::all()->sortByDesc("deadline");
+
+        return view('milestone')->with('projects',$projects);
     }
 
     /**
@@ -33,10 +36,13 @@ class MilestoneController extends Controller
     public function store(StoreMilestoneRequest $request)
     {
         $insert = Milestone::create([
-            'title' => $request->input('title'),
-            'description' => $request->input('description'),
-            'deadline' => Carbon::createFromFormat('d/m/Y', $request->input('deadline'))->format('Y-m-d h:i:s')
+            'objective' => $request->input('objective'),
+            'opened_at' => Carbon::createFromFormat('d/m/Y', $request->input('open'))->format('Y-m-d h:i:s'),
+            'closed_at' => Carbon::createFromFormat('d/m/Y', $request->input('close'))->format('Y-m-d h:i:s'),
+            'project_id' => $request->input('project'),
         ]);
+
+        return redirect('/milestone')->with('success','Milestone created successfully.');
     }
 
     /**
